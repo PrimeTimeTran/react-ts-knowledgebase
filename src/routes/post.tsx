@@ -8,7 +8,7 @@ const Post = () => {
   useEffect(() => {
     const item = document.getElementsByClassName('doc-content')[0]
     if (item) {
-      document.getElementsByClassName('doc-content')[0].style.padding = '5px'
+      // document.getElementsByClassName('doc-content')[0].style.padding = '5px'
     }
   }, [])
 
