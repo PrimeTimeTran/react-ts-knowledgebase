@@ -1,9 +1,6 @@
 import { Form } from "react-router-dom";
 import { Routes, Route, useParams } from 'react-router-dom';
 
-
-
-
 const Contact = (props: object) => {
   let { contactId } = useParams();
   console.log({

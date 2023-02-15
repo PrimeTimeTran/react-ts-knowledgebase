@@ -3,14 +3,6 @@ import {
   Outlet,
   useLoaderData,
 } from "react-router-dom";
-import { getContacts } from "../contacts";
-
-export async function loader({ request }: any) {
-  const url = new URL(request.url);
-  const q = url.searchParams.get("q");
-  const contacts = await getContacts(q);
-  return { contacts };
-}
 
 export default function Root() {
   return (
