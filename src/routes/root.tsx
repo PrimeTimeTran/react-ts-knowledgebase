@@ -1,7 +1,6 @@
 import {
   Link,
   Outlet,
-  useLoaderData,
 } from "react-router-dom";
 
 export default function Root() {
@@ -32,6 +31,20 @@ export default function Root() {
             </li>
             <li>
               <Link to={`contacts/2PACX-1vRbQsv2Jt8kx0VEDz8DODDHiSmMw_jRwXE3yksdgRoCUn-S0GQBuzyyttCj9h4m5vdQh2q0t7-ae_f4`}>Product Market Fit</Link>
+              <ul>
+                <li>
+                  <Link to={`contacts/2PACX-1vRw4Y8-rAKlBgO4_KgfnHa4tV8I0xT-26c9Erf7zXKl-_G3nRjBTTzy5eDtOe32txP4-LfMMNNESSis`}>Who is Responsible for Product-Market Fit?</Link>
+                </li>
+                <li>
+                  <Link to={`contacts/2PACX-1vRbQsv2Jt8kx0VEDz8DODDHiSmMw_jRwXE3yksdgRoCUn-S0GQBuzyyttCj9h4m5vdQh2q0t7-ae_f4`}>How is Product-Market Fit Measured?</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to={`contacts/2PACX-1vRw4Y8-rAKlBgO4_KgfnHa4tV8I0xT-26c9Erf7zXKl-_G3nRjBTTzy5eDtOe32txP4-LfMMNNESSis`}>Go to Market Strategy</Link>
+            </li>
+            <li>
+              <Link to={`contacts/2PACX-1vRw4Y8-rAKlBgO4_KgfnHa4tV8I0xT-26c9Erf7zXKl-_G3nRjBTTzy5eDtOe32txP4-LfMMNNESSis`}>Sales and Engagement</Link>
             </li>
           </ul>
         </nav>
