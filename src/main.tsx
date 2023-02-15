@@ -5,14 +5,18 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 
+import { ProSidebarProvider } from 'react-pro-sidebar';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
+import Contact from "./routes/post";
 
-
-
+function Home() {
+  return <h1>Welcome! Find something to learn in the sidebar</h1>
+}
 
 const router = createBrowserRouter([
   {
@@ -21,7 +25,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "contacts/:contactId",
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "posts/:postId",
         element: <Contact />,
       },
     ],
@@ -30,6 +38,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ProSidebarProvider>
+      <RouterProvider router={router} />
+    </ProSidebarProvider>
   </React.StrictMode>,
 )
