@@ -3,20 +3,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BasicNavbar() {
+function BasicExample() {
   return (
-    <Navbar bg="light">
+    <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Knowledge Base</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">KB</Nav.Link>
-            <Nav.Link href="#link">Community</Nav.Link>
-            <Nav.Link href="#link">Businesses</Nav.Link>
-            <Nav.Link href="#link">Jobs</Nav.Link>
-            <NavDropdown title="Menus" id="basic-nav-dropdown">
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -34,4 +31,4 @@ function BasicNavbar() {
   );
 }
 
-export default BasicNavbar;
+export default BasicExample;
