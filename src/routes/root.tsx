@@ -5,7 +5,7 @@ import {
 
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import Nav from '../components/Navbar'
 
