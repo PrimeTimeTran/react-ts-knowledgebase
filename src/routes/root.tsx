@@ -3,22 +3,19 @@ import {
   Outlet,
 } from "react-router-dom";
 
-import { Sidebar, Menu, MenuItem, SubMenu, sidebarClasses } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-
 import Nav from '../components/Navbar'
-import style from '../../node_modules/dom-helpers/cjs/css.d';
 
 export default function Root() {
   return (
-    <Container fluid>
-      <Col>
+    <Col sm={12}>
         <Row>
           <Nav />
         </Row>
-        <Row className={'row vh-100'}>
+      <Row className={'vh-100'}>
           <div id="sidebar">
             <div>
               <form id="search-form" role="search">
@@ -78,7 +75,6 @@ export default function Root() {
             <Outlet />
           </div>
         </Row>
-      </Col>
-    </Container>
+    </Col>
   )
 }
