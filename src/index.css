@@ -16,6 +16,15 @@
   width: 100%;
 }
 
+a.ps-menu-button {
+  padding-left: 0px !important;
+}
+
+.ps-open > ul {
+  padding-left: 10px;
+  border-left: 1px solid grey;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
