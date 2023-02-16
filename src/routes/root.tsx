@@ -3,7 +3,7 @@ import {
   Outlet,
 } from "react-router-dom";
 
-import { Sidebar, Menu, MenuItem, SubMenu, menuClasses } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem, SubMenu, sidebarClasses, menuClasses } from 'react-pro-sidebar';
 
 import { Row, Col } from 'react-bootstrap';
 
@@ -52,6 +52,9 @@ export default function Root() {
           </div>
           <Sidebar
             rootStyles={{
+              [`.${sidebarClasses.container}`]: {
+                backgroundColor: 'white',
+              },
               [`.${menuClasses.label}`]: {
                 overflowX: 'scroll',
                 textOverflow: 'clip',
