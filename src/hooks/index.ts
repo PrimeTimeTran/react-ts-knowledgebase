@@ -28,5 +28,3 @@ export const useAuth = (): AuthState => {
 
   return { isAuthenticated, setToken, removeToken };
 };
-
-export default useAuth;

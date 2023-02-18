@@ -22,6 +22,7 @@ export default function Modale() {
   const onSubmit = (e: string, p: string) => {
     setToken('sjsjs')
     handleClose()
+    window.location.reload();
   }
 
   return (

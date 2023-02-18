@@ -9,11 +9,9 @@ const Post = () => {
   const { isAuthenticated } = useAuth();
 
   useEffect(() => {
-    const item = document.getElementsByClassName('doc-content')[0]
-    if (item) {
-      // document.getElementsByClassName('doc-content')[0].style.padding = '5px'
-    }
-  }, [])
+  }, [isAuthenticated])
+
+  console.log({ 'foo': 'bar', isAuthenticated })
 
   return (
     <iframe

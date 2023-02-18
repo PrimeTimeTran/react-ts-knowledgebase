@@ -32,8 +32,6 @@ const Register: React.FC<RegisterProps> = ({ onSubmit }) => {
         value={password}
         onChange={(event) => setPassword(event.target.value)}
       />
-
-      <button type="submit">Submit</button>
     </form>
   );
 };
