@@ -10,7 +10,7 @@ import { Row, Col } from 'react-bootstrap';
 
 import Nav from '../components/Navbar'
 import IconLeft from '../components/Caret'
-
+import Footer from '../components/Footer';
 
 export default function Root() {
   return (
@@ -40,12 +40,17 @@ export default function Root() {
                 backgroundColor: 'white',
               },
               [`.${menuClasses.label}`]: {
+                // Clip is and scroll on x axis
                 overflowX: 'scroll',
                 textOverflow: 'clip',
+
+                // Wrap the text in submenu
+                whiteSpace: 'break-spaces',
+                // margin: 20
               },
-              [`.${menuClasses.label}::-webkit-scrollbar`]: {
-                display: 'none',
-              },
+              // [`.${menuClasses.label}::-webkit-scrollbar`]: {
+              //   display: 'none',
+              // },
             }}
           >
             <Menu>
@@ -95,7 +100,7 @@ export default function Root() {
           <Outlet />
         </div>
       </Row>
-      {/* <Modal /> */}
+      <Footer />
     </Col>
   )
 }

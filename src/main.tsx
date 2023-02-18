@@ -13,6 +13,7 @@ import './index.css'
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Post from "./routes/post";
+import Product from "./routes/product";
 
 function Home() {
   return <h1>Welcome! Find something to learn in the sidebar</h1>
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: '/why-us',
+    element: <Product />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
