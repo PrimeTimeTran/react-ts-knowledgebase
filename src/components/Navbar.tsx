@@ -3,7 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import Modal from '../components/Modal'
+
+import { useAuth } from '../hooks'
+
+
 function BasicExample() {
+  const { isAuthenticated, setToken, removeToken } = useAuth();
+
+  const SignOut = () => {
+    removeToken()
+    window.location.reload();
+  }
+
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -26,7 +38,13 @@ function BasicExample() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text onClick={SignOut}>
+            {!isAuthenticated ? "Register/SignIn" : 'Sign out'}
+          </Navbar.Text>
+        </Navbar.Collapse>      </Container>
+      <Modal />
     </Navbar>
   );
 }

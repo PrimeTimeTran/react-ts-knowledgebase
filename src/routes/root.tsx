@@ -9,7 +9,6 @@ import { Sidebar, Menu, MenuItem, SubMenu, sidebarClasses, menuClasses } from 'r
 import { Row, Col } from 'react-bootstrap';
 
 import Nav from '../components/Navbar'
-import Modal from '../components/Modal'
 import IconLeft from '../components/Caret'
 
 
@@ -96,7 +95,7 @@ export default function Root() {
           <Outlet />
         </div>
       </Row>
-      <Modal />
+      {/* <Modal /> */}
     </Col>
   )
 }

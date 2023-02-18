@@ -31,9 +31,7 @@ export default function Modale() {
         <Modal.Title>In order to access our premium content you must first register/signin.</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-
         <Register onSubmit={onSubmit} />
-
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
