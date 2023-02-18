@@ -12,7 +12,7 @@ import './index.css'
 
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
-import Contact from "./routes/post";
+import Post from "./routes/post";
 
 function Home() {
   return <h1>Welcome! Find something to learn in the sidebar</h1>
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "posts/:postId",
-        element: <Contact />,
+        element: <Post />,
       },
     ],
   },

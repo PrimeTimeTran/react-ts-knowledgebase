@@ -23,7 +23,16 @@ a.ps-menu-button {
 
 .ps-open > ul {
   padding-left: 10px;
-  border-left: 1px solid grey;
+}
+.ps-submenu-expand-icon {
+  display: none;
+}
+
+.submenu {
+  border-left: solid;
+  border-left-color: black;
+  border-left-width: 1px;
+  padding-left: 10px;
 }
 
 /* Extra small devices (phones, 600px and down) */

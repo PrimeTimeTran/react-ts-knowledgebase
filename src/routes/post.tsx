@@ -2,8 +2,11 @@ import { useEffect } from 'react';
 
 import { useParams } from 'react-router-dom';
 
+import { useAuth } from '../hooks/index'
+
 const Post = () => {
-  let { postId } = useParams();
+  const { postId } = useParams();
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const item = document.getElementsByClassName('doc-content')[0]
@@ -13,7 +16,17 @@ const Post = () => {
   }, [])
 
   return (
-    <iframe id="iframe" width="100%" height="100%" style={{ display: 'flex', justifyContent: 'center' }} frameBorder="1" src={`https://docs.google.com/document/d/e/${postId}/pub?embedded=true`}></iframe>
+    <iframe
+      id="iframe"
+      width="100%"
+      height="100%"
+      scrolling={isAuthenticated ? 'yes' : 'no'}
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+      frameBorder="1"
+      src={`https://docs.google.com/document/d/e/${postId}/pub?embedded=true`} />
   );
 }
 
