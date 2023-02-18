@@ -12,8 +12,6 @@ export default function Modale() {
 
   const [show, setShow] = useState<boolean>(!isAuthenticated);
 
-  console.log({ foo: 'barr', isAuthenticated, show, op: !isAuthenticated });
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -40,8 +38,8 @@ export default function Modale() {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        <Button variant="primary" onClick={handleClose}>
-          Save Changes
+        <Button variant="primary" onClick={onSubmit}>
+          Sign In
         </Button>
       </Modal.Footer>
     </Modal>
