@@ -12,7 +12,9 @@
 
 .footer-column {
   flex: 1;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-column:last-child {

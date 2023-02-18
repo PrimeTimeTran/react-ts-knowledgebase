@@ -34,12 +34,6 @@ a.ps-menu-button {
   border-left-color: black;
   border-left-width: 1px;
   padding-left: 10px;
-  overflow-wrap: break-word;
-}
-
-.ps-menu-label {
-  overflow-wrap: break-word;
-
 }
 
 /* Extra small devices (phones, 600px and down) */

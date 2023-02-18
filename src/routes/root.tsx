@@ -45,8 +45,7 @@ export default function Root() {
                 textOverflow: 'clip',
 
                 // Wrap the text in submenu
-                whiteSpace: 'break-spaces',
-                // margin: 20
+                // whiteSpace: 'break-spaces',
               },
               // [`.${menuClasses.label}::-webkit-scrollbar`]: {
               //   display: 'none',
