@@ -43,13 +43,18 @@ export default function Root() {
                 // Clip is and scroll on x axis
                 overflowX: 'scroll',
                 textOverflow: 'clip',
-
+                fontSize: 12,
                 // Wrap the text in submenu
-                // whiteSpace: 'break-spaces',
+                whiteSpace: 'break-spaces',
               },
-              // [`.${menuClasses.label}::-webkit-scrollbar`]: {
-              //   display: 'none',
-              // },
+              [`.${menuClasses.label}::-webkit-scrollbar`]: {
+                display: 'none',
+              },
+              [`.${menuClasses.menuItemRoot}`]: {
+                // border: '1px solid red'
+                // borderLeftWidth: 1,
+                // borderLeft: 'red',
+              },
             }}
           >
             <Menu>

@@ -19,12 +19,16 @@
 
 a.ps-menu-button {
   padding-left: 0px !important;
+}
 
+a.ps-menu-button:hover {
+  background-color: transparent !important;
 }
 
 .ps-open > ul {
   padding-left: 10px;
 }
+
 .ps-submenu-expand-icon {
   display: none;
 }
@@ -36,11 +40,14 @@ a.ps-menu-button {
   padding-left: 10px;
 }
 
+.ps-submenu-root::-webkit-scrollbarv {
+  display: none;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
     position: fixed;
-    /* padding-left: 5px; */
     overflow: auto;
   }
   nav {
