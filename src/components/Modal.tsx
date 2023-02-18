@@ -19,7 +19,7 @@ export default function Modale() {
     setShow(!isAuthenticated)
   }, [isAuthenticated])
 
-  const onSubmit = (e: string, p: string) => {
+  const onSubmit = () => {
     setToken('sjsjs')
     handleClose()
     window.location.reload();
@@ -39,7 +39,7 @@ export default function Modale() {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        <Button variant="primary" onClick={onSubmit}>
+        <Button variant="primary" onClick={() => onSubmit()}>
           Sign In
         </Button>
       </Modal.Footer>
