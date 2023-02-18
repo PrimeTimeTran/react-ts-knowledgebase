@@ -18,42 +18,21 @@ export default function Root() {
       <Nav />
       <Row className={'vh-100'}>
         <div id="sidebar">
-          <div>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div id="search-spinner" aria-hidden hidden={true} />
-              <div className="sr-only" aria-live="polite"></div>
-            </form>
-            <form method="post">  
-              <button type="submit">New</button>
-            </form>
-          </div>
           <Sidebar
             rootStyles={{
               [`.${sidebarClasses.container}`]: {
                 backgroundColor: 'white',
               },
               [`.${menuClasses.label}`]: {
-                // Clip is and scroll on x axis
+                // Scroll x axis for sidebar menu items
                 overflowX: 'scroll',
                 textOverflow: 'clip',
                 fontSize: 12,
-                // Wrap the text in submenu
+                // Wrap submenu text
                 whiteSpace: 'break-spaces',
               },
               [`.${menuClasses.label}::-webkit-scrollbar`]: {
                 display: 'none',
-              },
-              [`.${menuClasses.menuItemRoot}`]: {
-                // border: '1px solid red'
-                // borderLeftWidth: 1,
-                // borderLeft: 'red',
               },
             }}
           >
