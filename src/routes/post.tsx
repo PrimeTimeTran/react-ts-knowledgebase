@@ -1,31 +1,25 @@
-import { useEffect } from 'react';
+import { useParams } from "react-router-dom";
 
-import { useParams } from 'react-router-dom';
-
-import { useAuth } from '../hooks/index'
+import { useAuth } from "../hooks/index";
 
 const Post = () => {
   const { postId } = useParams();
   const { isAuthenticated } = useAuth();
-
-  useEffect(() => {
-  }, [isAuthenticated])
-
-  console.log({ 'foo': 'bar', isAuthenticated })
 
   return (
     <iframe
       id="iframe"
       width="100%"
       height="100%"
-      scrolling={isAuthenticated ? 'yes' : 'no'}
+      scrolling={isAuthenticated ? "yes" : "no"}
       style={{
-        display: 'flex',
-        justifyContent: 'center',
+        display: "flex",
+        justifyContent: "center",
       }}
       frameBorder="1"
-      src={`https://docs.google.com/document/d/e/${postId}/pub?embedded=true`} />
+      src={`https://docs.google.com/document/d/e/${postId}/pub?embedded=true`}
+    />
   );
-}
+};
 
-export default Post
+export default Post;

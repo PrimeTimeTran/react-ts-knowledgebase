@@ -29,7 +29,7 @@ a.ps-menu-button:hover {
 }
 
 .ps-open > ul {
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .ps-submenu-expand-icon {
@@ -37,14 +37,14 @@ a.ps-menu-button:hover {
 }
 
 .submenu {
-  border-left: solid;
-  border-left-color: black;
-  border-left-width: 1px;
+  /* border-left: solid; */
   padding-left: 10px;
+  /* border-left-width: 1px;
+  border-left-color: black; */
 }
 
-.ps-submenu-root::-webkit-scrollbarv {
-  display: none;
+.ps-submenu-root::-webkit-scrollbar {
+  /* display: none; */
 }
 
 /* Extra small devices (phones, 600px and down) */
