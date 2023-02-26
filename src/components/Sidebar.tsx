@@ -39,17 +39,7 @@ function Submenu(props: { i: SubmenuProps }) {
         {props.i.label}
       </span>
       {open && <ul className="submenu">
-        {props.i.submenu && props.i.submenu.map(s => <li onClick={() => navigate(`posts/${s.url}`)}>{s.label}</li>)}
-        <li>
-          <ul className="submenu-item">
-            {items.map((i: SubmenuProps) => (
-              <Submenu i={i} key={i.label} />
-            ))}
-          </ul>
-        </li>
-      </ul>}
-      {open && <ul className="submenu">
-        {props.i.submenu && props.i.submenu.map(s => <li onClick={() => navigate(`posts/${s.url}`)}>{s.label}</li>)}
+        {props.i.submenu && props.i.submenu.map(s => <li key={s.label} onClick={() => navigate(`posts/${s.url}`)}>{s.label}</li>)}
         <li>
           <ul className="submenu-item">
             {items.map((i: SubmenuProps) => (

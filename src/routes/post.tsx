@@ -13,13 +13,8 @@ const Post = () => {
         width="100%"
         height="100%"
         scrolling={isAuthenticated ? "yes" : "no"}
-        // scrolling="yes"
         className={isAuthenticated ? "yes" : "blurry-gradient"}
         src={`https://docs.google.com/document/d/e/${postId}/pub?embedded=true`}
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
       />
     </div>
   );
