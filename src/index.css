@@ -83,3 +83,17 @@ a.ps-menu-button:hover {
 @media only screen and (min-width: 1200px) {
   .example {background: pink;}
 }
+
+.gradient-blur {
+  position: fixed;
+  z-index: 5;
+  inset: auto 0 0 0;
+  height: 60%;
+  pointer-events: none;
+}
+
+.blurry-gradient {
+  -webkit-mask-image: linear-gradient(to bottom,black 10%,transparent 80%);
+  mask-image: linear-gradient(to bottom,black 10%,transparent 80%);
+	/* filter: blur(3px); */
+}
