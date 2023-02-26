@@ -45,7 +45,6 @@ export const IconLeft: React.FC<IconProps> = ({ label, children }) => {
       label={label}
       icon={open ? <CaretOpen /> : <CaretRight />}
       onOpenChange={() => setOpen(!open)}
-
     >
       {children}
     </SubMenu>

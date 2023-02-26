@@ -2,17 +2,21 @@
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
+
 #sidebar {
   width: 22rem;
   display: flex;
   flex-direction: column;
-  background-color:white;
+  /* background-color:red; */
+  overflow-x: scroll;
 }
 
 #sidebar > * {
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 100%;
 }
+
 
 #detail {
   flex: 1;
@@ -20,32 +24,7 @@
   width: 100%;
 }
 
-a.ps-menu-button {
-  padding-left: 0px !important;
-}
 
-a.ps-menu-button:hover {
-  background-color: transparent !important;
-}
-
-.ps-open > ul {
-  /* padding-left: 10px; */
-}
-
-.ps-submenu-expand-icon {
-  display: none;
-}
-
-.submenu {
-  /* border-left: solid; */
-  padding-left: 10px;
-  /* border-left-width: 1px;
-  border-left-color: black; */
-}
-
-.ps-submenu-root::-webkit-scrollbar {
-  /* display: none; */
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -84,16 +63,24 @@ a.ps-menu-button:hover {
   .example {background: pink;}
 }
 
-.gradient-blur {
-  position: fixed;
-  z-index: 5;
-  inset: auto 0 0 0;
-  height: 60%;
-  pointer-events: none;
+.blurry-gradient {
+  -webkit-mask-image: linear-gradient(to bottom,black 0%, transparent 80%);
+  mask-image: linear-gradient(to bottom,black 0%, transparent 80%);
 }
 
-.blurry-gradient {
-  -webkit-mask-image: linear-gradient(to bottom,black 10%,transparent 80%);
-  mask-image: linear-gradient(to bottom,black 10%,transparent 80%);
-	/* filter: blur(3px); */
+div > ul {
+  padding: 0.5em;
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.submenu {
+  border-left: 1px solid grey;
+  padding-left: 1em;   
 }
