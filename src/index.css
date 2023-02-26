@@ -10,17 +10,15 @@
   width: 22rem;
   display: flex;
   flex-direction: column;
-  /* background-color:red; */
   overflow-x: scroll;
   max-height: 100vh;
 }
 
 #sidebar > * {
+  width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 100%;
 }
-
 
 #detail {
   flex: 1;
@@ -78,8 +76,8 @@ div > ul {
 li {
   font-size: 12px;
   list-style: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .submenu {
