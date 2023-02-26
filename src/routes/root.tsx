@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 export default function Root() {
   return (
-    <Col sm={12}>
+    <Col sm={12} className="posts">
       <Nav />
       <Row className="vh-100">
         <div id="sidebar">
