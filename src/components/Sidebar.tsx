@@ -34,19 +34,12 @@ function Submenu(props: { i: SubmenuProps }) {
 
   return (
     <li>
-      <span onClick={() => onClick(props.i.url)} style={{ marginLeft: -5 }}>
+      <span onClick={() => onClick(props.i.url)}>
         {open ? <CaretOpen /> : <CaretRight />}
         {props.i.label}
       </span>
       {open && <ul className="submenu">
         {props.i.submenu && props.i.submenu.map(s => <li key={s.label} onClick={() => navigate(`posts/${s.url}`)}>{s.label}</li>)}
-        <li>
-          <ul className="submenu-item">
-            {items.map((i: SubmenuProps) => (
-              <Submenu i={i} key={i.label} />
-            ))}
-          </ul>
-        </li>
       </ul>}
     </li>
   )

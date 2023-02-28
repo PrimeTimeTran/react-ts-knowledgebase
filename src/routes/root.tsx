@@ -6,7 +6,6 @@ import { Row, Col } from 'react-bootstrap';
 
 import Nav from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import Footer from '../components/Footer';
 
 export default function Root() {
   return (
@@ -20,7 +19,6 @@ export default function Root() {
           <Outlet />
         </div>
       </Row>
-      {/* <Footer /> */}
     </Col>
   )
 }

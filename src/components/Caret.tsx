@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { SubMenu } from 'react-pro-sidebar';
 
-export interface IconProps extends React.SVGAttributes<HTMLOrSVGElement> {
+interface IconProps extends React.SVGAttributes<HTMLOrSVGElement> {
   size?: number;
   label?: string;
 }
