@@ -63,4 +63,30 @@ export const items = [
       },
     ]
   }
+  {
+    label: 'Những khái niệm cơ bản về gọi vốn',
+    url: '',
+    submenu: [
+      {
+        label: 'Lý thuyết gọi vốn',
+        url: '2PACX-1vSMzMUtRbHuANzmrRM0jDofJjdJhaMTuZMPQreib8WlDxrJVpSoAfL1qb91af6tAUUB6oWS6NTOupi1',
+      },
+      {
+        label: 'Checklist gọi vốn',
+        url: '2PACX-1vSofNZwpw3NlRYcUFLoO7AyjVEae_-IoGaQL3eNSHgCsb-Q9FpEIRK6MPdaE6welbREQeoT7ywvnRsA',
+      },
+      {
+        label: 'Những lầm tưởng khi gọi vốn',
+        url: '2PACX-1vSqHN-ng0rYJEsJf5FFzZJZlUeLrZ373cfzrFdMQsJ-_m8HqGFSRPj-6c_7oDCpKDSfLGy7XlQyoqeb',
+      },
+      {
+        label: 'Ưu tiên các cuộc họp của nhà đầu tư',
+        url: '2PACX-1vT5Cl0nRICxQYGkEzg96i9AZcaM77Gq0GjaOSTkFx8d6f1aXn5Te3-sp75YFQjhlc0Lhf_ITZVIjJAa',
+      },
+      {
+        label: 'Giới thiệu nhà đầu tư',
+        url: '2PACX-1vRKpvMaBE-2dRU9oaEoWx7mP2KarU6pBpmcJNHuuNsNnHnWxXfMUATw0ikWKeFCD9bcq95LsLau1bQW',
+      },
+    ]
+  }
 ]
