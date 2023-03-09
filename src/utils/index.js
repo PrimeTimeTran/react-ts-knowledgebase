@@ -62,7 +62,7 @@ export const items = [
         url: '2PACX-1vT3xcjBHOd0UuUPAT00ALl8-51KeWOWHRrOtYnalsXgtwnD3Yt5DQFKhKY8yV6pP44OcFOSt9NqZqve',
       },
     ]
-  }
+  },
   {
     label: 'Những khái niệm cơ bản về gọi vốn',
     url: '',
@@ -85,7 +85,21 @@ export const items = [
       },
       {
         label: 'Giới thiệu nhà đầu tư',
-        url: '2PACX-1vRKpvMaBE-2dRU9oaEoWx7mP2KarU6pBpmcJNHuuNsNnHnWxXfMUATw0ikWKeFCD9bcq95LsLau1bQW',
+        url: '2PACX-1vThpoyfbMGxxBLCWtHWSc0FBTOQCVo5SxFiZGtkGq7Vt6iHUMzae8fFeInKc4PhikAcm8Y241Pnbbou',
+      },
+    ]
+  },
+  {
+    label: 'Xây dựng một công ty',
+    url: '',
+    submenu: [
+      {
+        label: 'Đạt được sản phẩm phù hợp với thị trường',
+        url: '2PACX-1vRO6TC4HvI2Sn3K6R-9F8mgk2k526qMgxMgrC0P396-7evzBsmf8A5geCxBdFlDbI4s4MRolbEr_dcP',
+      },
+      {
+        label: 'Biết số liệu của bạn',
+        url: '2PACX-1vSofNZwpw3NlRYcUFLoO7AyjVEae_-IoGaQL3eNSHgCsb-Q9FpEIRK6MPdaE6welbREQeoT7ywvnRsA',
       },
     ]
   }

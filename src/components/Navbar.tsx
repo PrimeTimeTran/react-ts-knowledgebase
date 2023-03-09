@@ -25,6 +25,7 @@ function BasicExample() {
           <Nav className="me-auto">
             {/* <Nav.Link href="/">Home</Nav.Link> */}
             <Nav.Link href="/why-us">Why Us?</Nav.Link>
+            <Nav.Link href="/investors">Investors</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 

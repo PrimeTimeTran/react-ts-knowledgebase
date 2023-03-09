@@ -15,6 +15,7 @@ import ErrorPage from "./error-page";
 import Post from "./routes/post";
 import Product from "./routes/product";
 import Landing from "./routes/landing";
+import Investors from "./routes/investors";
 
 function Home() {
   return <h1>Welcome! Find something to learn in the sidebar</h1>
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: '/landing',
     element: <Landing />,
+  },
+  {
+    path: '/investors',
+    element: <Investors />,
   }
 ]);
 
